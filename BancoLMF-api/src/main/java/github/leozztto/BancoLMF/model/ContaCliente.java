@@ -40,6 +40,9 @@ public class ContaCliente {
     @Column(name = "saldoInicial")
     private Double saldoInicial;
 
+    @Column(name = "saldoAtual")
+    private Double saldoAtual;
+
     @ManyToOne
     @JoinColumn(name = "idTipoConta")
     @NotNull(message = "{campo.tipoConta.obrigatorio}")

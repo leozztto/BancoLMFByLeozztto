@@ -56,6 +56,7 @@ public class ContaClienteController {
                     contaCliente.setCliente(contaClienteUpdate.getCliente());
                     contaCliente.setTipoConta(contaClienteUpdate.getTipoConta());
                     contaCliente.setDataAlteracao(contaClienteUpdate.getDataAlteracao());
+                    contaCliente.setSaldoAtual(contaClienteUpdate.getSaldoAtual());
 
                     return contaClienteRepository.save(contaCliente);
                 })
